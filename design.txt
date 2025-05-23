@@ -1,0 +1,136 @@
+Problem Statement
+
+  This program will calculate the area for a given shape.  The program will prompt the user to
+  enter a shape and its dimensions.  The program will display the dimensions back to the user
+  along with the calculated area and a message thanking the user for participating.
+
+Nouns and Verbs
+
+  Nouns: area, shape, dimensions, message
+  
+  Verbs: calculate, prompt, enter, display
+  
+Defining Diagram
+
+  Inputs:
+    shape, dimensions
+  
+  Process:
+    read shape
+    read dimensions
+    calculate area
+    display dimensions, area, and message
+  
+  Outputs:
+    dimensions, area, message
+  
+Pseudocode
+
+  CalculateArea
+    initialize shape to ""
+    initialize length to 0
+    initialize length2 to 0
+    initialize width to 0
+    initialize height to 0
+    initialize radius to 0
+    initialize area to 0
+    
+    prompt for shape with "Please enter a shape"
+    
+    IF shape = square
+      prompt for length
+      calculate area using length * length
+      display length, area, and thank user for participating
+    ELSE IF shape = rectangle OR parallelogram
+      prompt for length and width
+      calculate area using length * width
+      display length, width, area, and thank user for participating
+    ELSE IF shape = circle
+      prompt for radius
+      calculate area using Math.PI * radius
+      display radius, area, and thank user for participating
+    ELSE IF shape = triangle
+      prompt for length and height
+      calculate area using (length * height) / 2
+      display length, height, area, and thank user for participating
+    ELSE IF shape = trapezoid
+      prompt for length 1, length 2 and height
+      calculate area using ((length1 * length 2) * height) / 2
+      display length 1, length 2, height, area, and thank user for participating
+    ELSE
+      display shape + "is not a valid shape.  Please enter a shape."
+    END IF
+  END
+
+Test Cases
+
+  Variables: shape, dimensions
+
+  Test Case 1:
+  
+    Input Values: square, Length = 3
+    
+    Expected Result:
+      Length: 3
+      Area: 9
+      Thank you for participating! 
+    
+    Actual Result:
+      Length: 3
+      Area: 9
+      Thank you for participating! 
+    
+  Test Case 2:
+  
+    Input Values: triangle, Length = 8, Height = 7
+    
+    Expected Result:
+      Length: 8
+      Height: 7
+      Area: 28
+      Thank you for participating! 
+    
+    Actual Result:
+      Length: 8
+      Height: 7
+      Area: 28
+      Thank you for participating! 
+    
+  Test Case 3:
+  
+    Input Values: cube
+    
+    Expected Result:
+      "cube" is not a valid shape.  Please enter a shape.
+    
+    Actual Result:
+      "cube" is not a valid shape.  Please enter a shape.
+    
+  Test Case 4:
+  
+    Input Values: trapezoid, Length 1 = 7, Length 2 = 9, Height = 4
+    
+    Expected Result:
+      First Length: 7
+      Second Length: 9
+      Height: 4
+      Area: 126
+      Thank you for participating! 
+    
+    Actual Result:
+      First Length: 7
+      Second Length: 9
+      Height: 4
+      Area: 126
+      Thank you for participating! 
+    
+  Test Case 5:
+  
+    Input Values: sphere
+    
+    Expected Result:
+      "sphere" is not a valid shape.  Please enter a shape.
+    
+    Actual Result:
+      "sphere" is not a valid shape.  Please enter a shape.
+    
